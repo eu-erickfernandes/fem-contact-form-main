@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+
+  <body>
+    <form class="form">
+      <h1 class="title">Contact Us</h1>
+
+      <div class="group row">
+        <div class="group">
+          <label for="first-name">First Name</label>
+
+          <input
+            class="input"
+            id="first-name"
+          name="first-name"
+            required 
+            type="text"
+          >
+        </div>
+
+        <div class="group">
+          <label for="last-name">Last Name</label>
+
+          <input
+            class="input"
+            id="last-name"
+            name="last-name"
+            required 
+            type="text"
+          >
+        </div>
+      </div>
+
+      <div class="group">
+        <label for="email">Email Address</label>
+
+        <input
+          class="input"
+          id="email"
+          name="email"
+          required 
+          type="text"
+        >
+      </div>
+
+      <fieldset class="group">
+        <legend>Query Type</legend>
+
+        <div class="group row">
+          <label for="query-type-general">
+            <input 
+              id="query-type-general"
+              name="query-type" 
+              type="radio" 
+            >
+
+            General Enquiry
+          </label>
+
+          <label for="query-type-support">
+            <input 
+              id="query-type-support"
+              name="query-type" 
+              type="radio" 
+            >
+
+            Support Request
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="group">
+        <label for="message">Message</label>
+
+        <textarea
+          class="input"
+          id="message"
+          name="message"
+          required 
+          type="text"
+        ></textarea>
+      </div>
+
+      <div class="group row">
+        <input 
+          id="consent-checkbox" 
+          required
+          type="checkbox" 
+        >
+
+        <label for="consent-checkbox">I consent to being contacted by the team</label>
+      </div>
+
+      <button class="button" type="submit">Submit</button>
+    </form>
+    
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
