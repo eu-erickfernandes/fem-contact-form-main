@@ -7,11 +7,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     
     <title>Frontend Mentor | Contact form</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <body>
-    <form class="form">
-      <h1 class="title">Contact Us</h1>
+    <form>
+      <h1>Contact Us</h1>
 
       <div class="group row">
         <div class="group">
@@ -20,7 +23,7 @@
           <input
             class="input"
             id="first-name"
-          name="first-name"
+            name="first-name"
             required 
             type="text"
           >
@@ -54,12 +57,12 @@
       <fieldset class="group">
         <legend>Query Type</legend>
 
-        <div class="group row">
           <label for="query-type-general">
             <input 
               id="query-type-general"
               name="query-type" 
-              type="radio" 
+              type="radio"
+              required 
             >
 
             General Enquiry
@@ -74,7 +77,6 @@
 
             Support Request
           </label>
-        </div>
       </fieldset>
 
       <div class="group">
@@ -85,18 +87,19 @@
           id="message"
           name="message"
           required 
+          rows="10"
           type="text"
         ></textarea>
       </div>
 
-      <div class="group row">
+      <div class="group consent-group">
         <input 
           id="consent-checkbox" 
           required
           type="checkbox" 
         >
 
-        <label for="consent-checkbox">I consent to being contacted by the team</label>
+        <label for="consent-checkbox">I consent to being contacted by the team <span>*</span></label>
       </div>
 
       <button class="button" type="submit">Submit</button>

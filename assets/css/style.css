@@ -1,0 +1,117 @@
+/* Typography Settings */
+@import url(https://fonts.googleapis.com/css?family=Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+body,
+body *{
+    font-family: 'Karla', system-ui, sans-serif;
+}
+
+
+/* Colors Custom Properties */
+:root{
+    --clr-green-200: hsl(148, 38%, 91%);
+    --clr-green-600: hsl(169, 82%, 27%);
+
+    --clr-red: hsl(0, 66%, 54%);
+
+    --clr-gray-500: hsl(186, 15%, 59%);
+    --clr-gray-900: hsl(187, 24%, 22%);
+
+    --clr-white: hsl(0, 0%, 100%);
+}
+
+/* Layout */
+body{
+    background-color: var(--clr-green-200);
+    display: flex;
+    justify-content: center;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+}
+
+form{
+    --form-gap: 2rem;
+
+    background-color: var(--clr-white);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--form-gap);
+    padding: 1.5rem;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    &.row{
+        gap: var(--form-gap);
+    }
+
+    &:has(> .input:required) > :is(label)::after{
+        content: "*";
+        color: var(--clr-green-600);
+    } 
+}
+
+h1{
+    color: var(--clr-gray-900);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+label{
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+}
+
+.input{
+    border: 1px solid var(--clr-gray-500);
+    border-radius: .5rem;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+fieldset.group{
+    gap: 1rem;
+
+    legend{
+        margin-bottom: 1rem;
+    }
+
+
+    label{
+        border: 1px solid var(--clr-gray-500);
+        border-radius: .5rem;
+        padding: 1rem;
+        
+        input[type="radio"]{
+            margin: 0;
+        }
+    }
+}
+
+.consent-group{
+    flex-direction: row;
+
+    label{
+        display: inline;
+        line-height: 150%;
+
+        span{
+            color: var(--clr-green-600);
+        }
+    }
+}
+
+.button{
+    background-color: var(--clr-green-600);
+    border: none;
+    border-radius: .5rem;
+    color: var(--clr-white);
+    font-size: 1rem;
+    font-weight: 700;
+    padding-block: 1.25rem;
+}
