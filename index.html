@@ -9,18 +9,22 @@
     <title>Frontend Mentor | Contact form</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/colors.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/form.css">
   </head>
 
   <body>
     <form>
       <h1>Contact Us</h1>
 
-      <div class="group row">
-        <div class="group">
+      <div class="form-group row">
+        <div class="form-group">
           <label for="first-name">First Name</label>
 
           <input
+            autocomplete="off"
             class="input"
             id="first-name"
             name="first-name"
@@ -29,7 +33,7 @@
           >
         </div>
 
-        <div class="group">
+        <div class="form-group">
           <label for="last-name">Last Name</label>
 
           <input
@@ -42,10 +46,11 @@
         </div>
       </div>
 
-      <div class="group">
+      <div class="form-group">
         <label for="email">Email Address</label>
 
         <input
+          autocomplete="off"
           class="input"
           id="email"
           name="email"
@@ -54,7 +59,7 @@
         >
       </div>
 
-      <fieldset class="group">
+      <fieldset class="form-group row">
         <legend>Query Type</legend>
 
           <label for="query-type-general">
@@ -79,7 +84,7 @@
           </label>
       </fieldset>
 
-      <div class="group">
+      <div class="form-group">
         <label for="message">Message</label>
 
         <textarea
@@ -92,7 +97,7 @@
         ></textarea>
       </div>
 
-      <div class="group consent-group">
+      <div class="form-group consent-form-group">
         <input 
           id="consent-checkbox" 
           required

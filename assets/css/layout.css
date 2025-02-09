@@ -1,0 +1,16 @@
+body{
+    background-color: var(--clr-green-200);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    min-height: 100dvh;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+}
+
+/* Responsive settings */
+@media screen and (width >= 600px) {
+    body{
+        align-items: center;
+    }
+}
